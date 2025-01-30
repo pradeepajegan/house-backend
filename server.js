@@ -5,7 +5,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: "house-frontend-blh6lyuzr-pradeepas-projects-f43c1da3.vercel.app" }));
 const MONGO_URI = "mongodb+srv://pradeepa-1204:pradeepa1204@cluster0.c1hoy.mongodb.net/houseRentDB?retryWrites=true&w=majority";
 const JWT_SECRET = "secret_key";
 const PORT = process.env.PORT || 5000;
