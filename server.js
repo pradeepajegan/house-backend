@@ -10,7 +10,7 @@ const MONGO_URI = "mongodb+srv://pradeepa-1204:pradeepa1204@cluster0.c1hoy.mongo
 const JWT_SECRET = "secret_key";
 const PORT = process.env.PORT || 5000;
 mongoose
-  .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(MONGO_URI, { useUnifiedTopology: true })
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 const userSchema = new mongoose.Schema({
